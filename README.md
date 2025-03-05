@@ -1,3 +1,3 @@
-** Personal nvim config files **
-Custom configs with NvChad
+#### Personal nvim config files
 
+My personalized Neovim setup built on NvChad.
