@@ -1,3 +1,5 @@
+local getHeaderAsciiArt = require("utils.getWeekDayAscii")
+
 return { -- messages, cmdline and the popupmenu
   {
     "folke/noice.nvim",
@@ -103,25 +105,11 @@ return { -- messages, cmdline and the popupmenu
     priority = 1200,
   },
   {
-    "MeanderingProgrammer/render-markdown.nvim",
-    enabled = false,
-  },
-  {
     "folke/snacks.nvim",
     opts = {
       dashboard = {
         preset = {
-          header = [[
-	          ██▄ ▄███▓ ▄▄▄       ███▄    █  ██▓    ▄▄▄       ██▓
-            ▓▀█▀ ██▒▒████▄     ██ ▀█   █ ▓██▒   ▒████▄    ▓██▒
-            ▓   ▓██░▒██  ▀█▄  ▓██  ▀█ ██▒▒██░   ▒██  ▀█▄  ▒██▒
-            ▒   ▒██ ░██▄▄▄▄██ ▓██▒  ▐▌██▒▒██░   ░██▄▄▄▄██ ░██░
-            ▒   ░██▒ ▓█   ▓██▒▒██░   ▓██░░██████▒▓█   ▓██▒░██░
-            ░   ░  ░ ▒▒   ▓▒█░░ ▒░   ▒ ▒ ░ ▒░▓  ░▒▒   ▓▒█░░▓  
-            ░      ░  ▒   ▒▒ ░░ ░░   ░ ▒░░ ░ ▒  ░ ▒   ▒▒ ░ ▒ ░
-            ░   ░     ░   ▒      ░   ░ ░   ░ ░    ░   ▒    ▒ ░
-            ░         ░  ░         ░     ░  ░     ░  ░ ░     
-   ]],
+          header = getHeaderAsciiArt(),
         },
       },
     },
