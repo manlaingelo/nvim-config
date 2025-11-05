@@ -1,3 +1,5 @@
+local getHeader = require("utils/get-header")
+
 return {
   {
     "folke/tokyonight.nvim",
@@ -6,6 +8,16 @@ return {
       styles = {
         sidebars = "transparent",
         floats = "transparent",
+      },
+    },
+  },
+  {
+    "folke/snacks.nvim",
+    opts = {
+      dashboard = {
+        preset = {
+          header = getHeader(),
+        },
       },
     },
   },
